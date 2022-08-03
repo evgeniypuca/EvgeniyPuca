@@ -12,66 +12,103 @@
    <table width="700">
       <tr>
          <td>
-            <strong>Простая форма поиска с вариантами:</strong>
+            <h4>Простая форма поиска с вариантами:</h4>
             <fieldset>
                <legend>Строка поиска</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
                   <input type="text" pattern="[0-9]{0,10}">
                   <input type="submit">
                   <br>
-                  <input type="radio" value="value_01">на сайте
-                  <input type="radio" value="value_02">в google
+                  <input type="radio" name="search" id="search_site_left">
+                  <label for="search_site_left">на сайте</label>
+                  <input type="radio" name="search" id="search_google_left">
+                  <label for="search_google_left">в google</label>
                </form>
             </fieldset>
          </td>
          <td>
-            <strong>Простая форма поиска с вариантами:</strong>
+            <h4>Простая форма поиска с вариантами:</h4>
             <fieldset>
                <legend>Строка поиска</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
-                  <input type="text" autofocus">
+                  <input type="text" autofocus>
                   <input type="submit">
                   <br>
-                  <input type="radio" value="value_01">на сайте
-                  <input type="radio" value="value_02">в google
+                  <input type="radio" name="search" id="search_site">
+                  <label for="search_site">на сайте</label>
+                  <input type="radio" name="search" id="search_google">
+                  <label for="search_google">в google</label>
                </form>
             </fieldset>
          </td>
       </tr>
       <tr>
          <td>
-            <strong>Простая форма авторизации:</strong>
+            <h4>Простая форма авторизации:</h4>
             <fieldset>
                <legend>Авторизируйтесь</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
                   <INPUT TYPE="text" ID="login" NAME="login">
-                  <label for=“login”>Логин </label>
-                  <br><br>
+                  <label for="login">Логин</label>
+                  <br>
                   <INPUT TYPE="password" ID="pass" NAME="password">
-                  <label for=“pass”> Пароль </label>
+                  <label for="pass"> Пароль </label>
+                  <br>
+                  <input type="checkbox" id="chbox1">
+                  <label for="chbox1">Оставаться в системе</label>
+                  <br>
+                  <input type="button" name="enter" id="" value="Войти">
                </form>
             </fieldset>
          </td>
          <td>
-            <strong>Как вам?</strong>
+            <h4>Как вам?</h4>
             <fieldset>
                <legend>Строка поиска</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
+                  <input type="radio" name="radio_group" id="1">
+                  <label for="1">ничего</label>
+                  <br>
+                  <input type="radio" name="radio_group" id="2">
+                  <label for="2">неплохо</label>
+                  <br>
+                  <input type="radio" name="radio_group" id="3">
+                  <label for="3">хорошо</label>
+                  <br>
+                  <input type="radio" name="radio_group" id="4">
+                  <label for="4">супер</label>
+                  <br>
+                  <input type="submit">
+                  <br>
+                  <input type="text" name="date_voite" value="2013.12.31" DISABLED>
                </form>
             </fieldset>
          </td>
       </tr>
       <tr>
          <td>
-            <strong>Отзыв:</strong>
+            <h4>Отзыв:</h4>
             <fieldset>
                <legend>Оставьте Ваш отзыв</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
+                  <INPUT TYPE="text" ID="name" NAME="name">
+                  <label for="name">* Имя</label>
+                  <br>
+                  <INPUT TYPE="email" ID="e-mail" NAME="e-mail" method="get">
+                  <label for="e-mail"> * e-mail </label>
+                  <br>
+                  <textarea name="textarea" id="textarea" cols="17" rows="2">Форма отправки</textarea>
+                  <br>
+                  <input type="submit">
+
+
+
+
                </form>
             </fieldset>
          </td>
          <td>
-            <strong>Выпадающий и мульти списки:</strong>
+            <h4>Выпадающий и мульти списки:</h4>
             <fieldset>
                <legend>Города РБ</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
@@ -81,7 +118,7 @@
       </tr>
       <tr>
          <td>
-            <strong>Загрузка файла на сервер:</strong>
+            <h4>Загрузка файла на сервер:</h4>
             <fieldset>
                <legend>Upload</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
@@ -89,7 +126,7 @@
             </fieldset>
          </td>
          <td>
-            <strong>Валидация данных HTML5:</strong>
+            <h4>Валидация данных HTML5:</h4>
             <fieldset>
                <legend>Строка поиска</legend>
                <form action="http://sc.it-academy.by/fe/form.php" name="search" method="get">
