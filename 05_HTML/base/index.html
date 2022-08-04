@@ -137,13 +137,12 @@
                <legend>Upload</legend>
                <form action="http://fe.it-academy.by/TestForm.php" name="form7" method="post"
                   enctype="multipart/form-data" target="_blank">
-
                   <label for="file_Field">Файл:</label><br>
                   <input type="file" name="file_Field" id="file_Field">
                   <br>
                   <label for="save">Срок хранения (года):</label>
                   <br>
-                  <input type="text" pattern="[0-9]{3}" name="text" id="save">
+                  <input type="number" name="text" id="save">
                   <input type="submit" value="Загрузить">
                </form>
             </fieldset>
@@ -159,7 +158,7 @@
                      +ХХХ-ХХ-ХХХХХХХ, где Х - любое число
                   </label>
                   <br>
-                  <input type="text" pattern="[0-9]{3}" name="number" id="number" placeholder="+375-29-1234567">
+                  <input type="text" pattern="[0-9]{12}" name="number" id="number" placeholder="+375-29-1234567">
                   >
                   <br>
                   <input type="submit" value="Проверить">
