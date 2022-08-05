@@ -30,7 +30,7 @@
             <fieldset>
                <legend>Строка поиска</legend>
                <form action="http://fe.it-academy.by/TestForm.php" name="form2" method="get" target="_blank">
-                  <input type="text" autofocus>
+                  <input type="text" required autofocus>
                   <input type="submit" value="Искать">
                   <br>
                   <input type="radio" name="search" id="search_site" value="search_site">
@@ -47,10 +47,10 @@
             <fieldset>
                <legend>Авторизируйтесь</legend>
                <form action="http://fe.it-academy.by/TestForm.php" name="form3" method="get" target="_blank">
-                  <INPUT TYPE="text" ID="login" NAME="login">
+                  <INPUT TYPE="text" ID="login" NAME="login" required>
                   <label for="login">Логин</label>
                   <br>
-                  <INPUT TYPE="password" ID="pass" NAME="password">
+                  <INPUT TYPE="password" ID="pass" NAME="password" required>
                   <label for="pass">Пароль </label>
                   <br>
                   <input type="checkbox" name="checkbox" id="chbox1">
@@ -78,6 +78,8 @@
                   <label for="4">супер</label>
                   <br>
                   <input type="submit">
+                  <br>
+                  <input type="text" name="date_voite" value="2013.12.31" hidden>
                </form>
             </fieldset>
          </td>
@@ -88,10 +90,10 @@
             <fieldset>
                <legend>Оставьте Ваш отзыв</legend>
                <form action="http://fe.it-academy.by/TestForm.php" name="form5" method="post" target="_blank">
-                  <INPUT TYPE="text" ID="name" NAME="name">
+                  <INPUT TYPE="text" ID="name" NAME="name" required>
                   <label for="name">Имя</label>
                   <br>
-                  <INPUT TYPE="email" ID="e-mail" NAME="e-mail">
+                  <INPUT TYPE="email" ID="e-mail" NAME="e-mail" required>
                   <label for="e-mail">e-mail </label>
                   <br>
                   <textarea name="textarea" id="textarea" cols="17" rows="2">Форма отправки</textarea>
@@ -135,14 +137,13 @@
             <h4>Загрузка файла на сервер:</h4>
             <fieldset>
                <legend>Upload</legend>
-               <form action="http://fe.it-academy.by/TestForm.php" name="form7" method="post"
-                  enctype="multipart/form-data" target="_blank">
+               <form action="http://fe.it-academy.by/TestForm.php" name="form7" method="post" target="_blank">
                   <label for="file_Field">Файл:</label><br>
                   <input type="file" name="file_Field" id="file_Field">
                   <br>
                   <label for="save">Срок хранения (года):</label>
                   <br>
-                  <input type="number" name="text" id="save">
+                  <input type="number" name="year" id="save">
                   <input type="submit" value="Загрузить">
                </form>
             </fieldset>
@@ -152,21 +153,20 @@
             <fieldset>
                <legend>Строка поиска</legend>
                <form action="http://fe.it-academy.by/TestForm.php" name="form8" method="get" target="_blank">
-                  <input type="text" pattern="[А-Яа-яЁё]" name="search" placeholder="Только русские буквы">
+                  <input type="text" pattern="^[А-Яа-яЁё\s]+$" name="search" placeholder="Только русские буквы">
                   <br>
                   <label for="number">Телефонный номер в формате
                      +ХХХ-ХХ-ХХХХХХХ, где Х - любое число
                   </label>
                   <br>
-                  <input type="text" pattern="[0-9]{12}" name="number" id="number" placeholder="+375-29-1234567">
-                  >
+                  <input type="text" pattern="^\+\d{3}-\d{2}-\d{7}" name="number" id="number"
+                     placeholder="+375-29-1234567">
                   <br>
                   <input type="submit" value="Проверить">
                </form>
             </fieldset>
          </td>
       </tr>
-
    </table>
 </body>
 
