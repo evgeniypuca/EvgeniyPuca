@@ -1,0 +1,29 @@
+body {
+   font-family: badScriptregular;
+}
+
+.hat_group {
+   text-align: right;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.hat1 {
+   font-weight: bold;
+}
+
+.hat2 {
+   font-style: italic;
+}
+
+.text {
+   text-indent: 5mm
+}
+
+#in {
+   text-align: left;
+}
+
+@font-face {
+   font-family: badScriptregular;
+   src: url(BadScript-Regular.ttf) format("truetype");
+}
