@@ -1,38 +1,16 @@
-.card1 {
-   width: 143px;
-   height: 200px;
-   float: left;
-   background: url(./img/cards.7e0a18f0.png) no-repeat;
-   background-position: right 58.6%
+ul {
+   width: 350px;
+   list-style: upper-roman;
 }
 
-.card2 {
-   width: 143px;
-   height: 200px;
-   float: left;
-   background: url(./img/cards.7e0a18f0.png) no-repeat;
-   background-position: left 75.35%
+li ul {
+   list-style: lower-roman;
 }
 
-.card3 {
-   width: 143px;
-   height: 200px;
-   float: left;
-   background: url(./img/cards.7e0a18f0.png) no-repeat;
-   background-position: 67% 58.6%
+div {
+   background-color: #000;
+   color: green;
+   width: 400px;
+   height: max-content 4;
+   overflow: auto;
 }
-
-.card4 {
-   width: 143px;
-   height: 200px;
-   float: left;
-   background: url(./img/cards.7e0a18f0.png) no-repeat;
-   background-position: 34% 92.1%
-}
-
-.card5 {
-   width: 143px;
-   height: 200px;
-   float: left;
-   background: url(./img/cards.7e0a18f0.png) no-repeat;
-   background-position: left 100.45%
