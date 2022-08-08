@@ -1,0 +1,38 @@
+.card1 {
+   width: 143px;
+   height: 200px;
+   float: left;
+   background: url(./img/cards.7e0a18f0.png) no-repeat;
+   background-position: right 58.6%
+}
+
+.card2 {
+   width: 143px;
+   height: 200px;
+   float: left;
+   background: url(./img/cards.7e0a18f0.png) no-repeat;
+   background-position: left 75.35%
+}
+
+.card3 {
+   width: 143px;
+   height: 200px;
+   float: left;
+   background: url(./img/cards.7e0a18f0.png) no-repeat;
+   background-position: 67% 58.6%
+}
+
+.card4 {
+   width: 143px;
+   height: 200px;
+   float: left;
+   background: url(./img/cards.7e0a18f0.png) no-repeat;
+   background-position: 34% 92.1%
+}
+
+.card5 {
+   width: 143px;
+   height: 200px;
+   float: left;
+   background: url(./img/cards.7e0a18f0.png) no-repeat;
+   background-position: left 100.45%
