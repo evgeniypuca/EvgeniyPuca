@@ -1,13 +1,29 @@
-.article1 {
+.flex {
+   display: flex;
+
+}
+
+
+.flex1 {
    width: 15em;
    background-color: rgb(236, 238, 238);
-   float: left;
+
+}
+
+.flex2 {
+   align-self: flex-start;
+   align-items: stretch;
 }
 
 .article2 {
    background-color: rgb(116, 116, 116);
-   margin-bottom: 0.2em;
+
+}
+
+.article3 {
+   background-color: rgb(116, 116, 116);
    overflow: auto;
+   align-items: stretch;
 }
 
 img {
@@ -15,7 +31,7 @@ img {
 }
 
 footer {
-   clear: both;
-   width: 100%;
    background-color: rgb(187, 182, 182);
+
+
 }

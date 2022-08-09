@@ -11,6 +11,5 @@ div {
    background-color: #000;
    color: green;
    width: 400px;
-   height: max-content 4;
    overflow: auto;
 }
