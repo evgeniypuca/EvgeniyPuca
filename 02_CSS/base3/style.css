@@ -1,11 +1,15 @@
+.parent {
+   background-color: #dbdbdb;
+}
+
 .article1 {
    width: 15em;
-   background-color: rgb(236, 238, 238);
+   background-color: #cccccc;
    float: left;
 }
 
 .article2 {
-   background-color: rgb(116, 116, 116);
+   background-color: #aaaaaa;
    margin-bottom: 0.2em;
    overflow: auto;
 }
@@ -15,5 +19,5 @@ img {
 }
 
 footer {
-   background-color: rgb(187, 182, 182);
+   background-color: #cccccc;
 }
