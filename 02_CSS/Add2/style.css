@@ -1,18 +1,26 @@
-.flex {
-   display: flex;
-}
+.parent {
+   background-color: #dbdbdb;
 
-.article1 {
-   background-color: rgb(199, 192, 192);
-}
-
-.article2 {
-   background-color: rgb(116, 116, 116);
 
 }
 
-.article3 {
-   background-color: rgb(116, 116, 116);
+.flex1 {
+   display: flex
+}
+
+
+.item1 {
+   width: 15em;
+   background-color: #cccccc;
+}
+
+.item2 {
+   background-color: #aaaaaa;
+
+}
+
+.item3 {
+   background-color: #aaaaaa;
    overflow: auto;
 }
 
@@ -20,6 +28,6 @@ img {
    float: right;
 }
 
-.article4 {
-   background-color: rgb(187, 182, 182);
+.item4 {
+   background-color: #cccccc;
 }
