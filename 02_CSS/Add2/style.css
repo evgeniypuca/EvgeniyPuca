@@ -1,31 +1,37 @@
+* {
+   margin: 0;
+}
+
 .parent {
    background-color: #dbdbdb;
-
-
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: .2em;
 }
-
-.flex1 {
-   display: flex
-}
-
 
 .item1 {
    width: 15em;
    background-color: #cccccc;
+   flex-shrink: 0;
+
+
 }
 
 .item2 {
    background-color: #aaaaaa;
+   margin-bottom: .2em;
 
 }
 
 .item3 {
    background-color: #aaaaaa;
-   overflow: auto;
+
+
 }
 
-img {
-   float: right;
+.img {
+   display: flex;
+   justify-content: end;
 }
 
 .item4 {
