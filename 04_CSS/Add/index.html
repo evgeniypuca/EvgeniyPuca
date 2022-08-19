@@ -25,34 +25,51 @@
       a:hover span {
          visibility: visible;
       }
+
+      a[href$='doc']::before {
+         content: url(img/extref.png);
+      }
+
+      a[href$='word']::after {
+         content: url(img/logo-doc.jpg);
+      }
+
+      a[href$='pdf']::before {
+         content: url(img/logo-pdf.png);
+
+      }
+
+      a[href$='zip']::after {
+         content: url(img/logo-zip.gif);
+      }
    </style>
 </head>
 
 <body>
    <h1>Форматы файлов</h1>
    <div>
-      <p>.Doc или .doc (от английского. <img src="img/extref.png" alt=""><a href="">document</a> ) - расширение файл ,
+      <p>.Doc или .doc (от английского. <a href="doc">document</a> ) - расширение файл ,
          используемое
          пдля файлов,
          придеоставляющихтекст , с разметкой или без. Расширение .DOC часто используется для обозначени просты текстовых
          файов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.
          <br>
-         <a href="">Документ MS Word</a><img src="img/logo-doc.jpg" alt="">
+         <a href="word">Документ MS Word</a>
       </p>
-      <p> Portable Document Format (<img src="img/extref.png" alt=""><a href=""">PDF</a>) —
+      <p> Portable Document Format (<a href="doc">PDF</a>) —
          межплатформенный
          открытый формат электронных документов,
          разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
          <br>
-         <a href="">Документ PDF</a> <img src=" img/logo-pdf.png" alt="">
+         <a href="pdf">Документ PDF</a>
       </p>
       <p>
-         ZIP — формат архивации файлов и сжатия данных без потерь. Файл в этом формате обычно имеет рсщирение <img
-            src="img/extref.png" alt=""><a href="">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+         ZIP — формат архивации файлов и сжатия данных без потерь. Файл в этом формате обычно имеет рсщирение <a
+            href="doc">.zip</a> и хранит в сжатом или несжатом виде один или несколько
          файлов, которые можно из него
          извлечь путем распаковки с помощю сепциалной программы.
          <br>
-         <a href="">Архив</a><img src="img/logo-zip.gif" alt="">
+         <a href="zip">Архив</a><img src="" alt="">
       </p>
    </div>
    <h2>Это список файлов</h2>

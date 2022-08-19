@@ -9,7 +9,38 @@
    <style>
       .chess {
          border-collapse: collapse;
+         counter-reset: number 65;
       }
+
+      .chess tr:nth-child(odd) td:nth-child(odd):before {
+         counter-increment: number -1;
+         content: '' counter(number) '';
+         color: white;
+         font-size: xx-large;
+
+      }
+
+      .chess tr:nth-child(even) td:nth-child(even)::before {
+         counter-increment: number -1;
+         content: '' counter(number) '';
+         color: white;
+         font-size: xx-large;
+      }
+
+      .chess tr:nth-child(odd) td:nth-child(even)::before {
+         counter-increment: number -1;
+         content: '' counter(number) '';
+         color: black;
+         font-size: xx-large;
+      }
+
+      .chess tr:nth-child(even) td:nth-child(odd)::before {
+         counter-increment: number -1;
+         content: '' counter(number) '';
+         color: black;
+         font-size: xx-large;
+      }
+
 
       .chess td {
          width: 80px;
@@ -28,8 +59,6 @@
    </style>
 
 <body>
-
-
    <table class="chess">
       <tr>
          <td></td>

@@ -7,16 +7,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <Style>
-      div {
-         text-align: center;
-         max-width: 600px;
-      }
-
       tr {
          text-align: left;
-         background-color: #0F0;
-         border-style: dotted;
-
+         background-color: white;
       }
 
       tr:first-child {
@@ -27,13 +20,42 @@
          background-color: #d3d3d3;
 
       }
+
+      tr:last-child {
+         background-color: white;
+         text-align: center;
+         border-width: 0 0 0 0;
+
+      }
+
+      tr:hover {
+         background-color: rgb(235, 220, 134);
+      }
+
+      td {
+         border-style: dotted;
+         border-width: 0 0 2px 2px;
+      }
+
+      th {
+         border-style: dotted;
+         border-width: 0 0 2px 0;
+      }
+
+      tr:last-child td {
+         border-width: 0 0 0 0;
+      }
+
+      tr:first-child th {
+         border-width: 0 0 0 0;
+      }
    </Style>
 </head>
 
 
 <body>
    <div>
-      <table>
+      <table class="table">
          <tr>
             <th>ФИО</th>
             <th>пол</th>
@@ -82,8 +104,11 @@
             <td>333344567</td>
             <td>345343434343</td>
          </tr>
+         <tr>
+            <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
+         </tr>
+
       </table>
-      ДАННЫЕ О СОТРУДНИКАХ
    </div>
 </body>
 

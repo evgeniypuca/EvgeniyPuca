@@ -31,6 +31,7 @@
 
       div.MenuLevel2 {
          width: 150px;
+
          display: none;
          color: #8b888b;
 
@@ -45,10 +46,13 @@
       }
 
       div.MenuLevel1>div:hover div.MenuLevel2 {
+         transition: 1.3s;
          display: block;
+
          position: absolute;
          z-index: 1;
-         transition: 1.3s;
+         transition: 2s;
+
       }
 
       div.MenuLevel1>div:hover {
@@ -61,7 +65,6 @@
          background-color: #818181;
          color: #c3cac4;
          transition: .3s;
-
       }
 
       @media all and (max-width: 928px) {
