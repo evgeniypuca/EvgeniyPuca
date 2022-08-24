@@ -6,39 +6,61 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <style>
+      .password {
+         background-color: red;
+         display: ;
+      }
+   </style>
 </head>
 
 <body>
 
+   <form method="post" name="form" action="">
+
+      <label>
+         <input type="text" class="password"><span>*Пароль</span>
+      </label>
+      <br>
+
+      <label>
+         <input type="text" class="cor_password"><span>*Повторите пароль</span>
+      </label>
+      <div class="error"></div>
+      <br>
+      <input type="submit" value="Отправить" id="submit">
+
+   </form>
 
 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
    <script>
-      <script>
+      $(document).ready(function ($) {
+         var counter = 0;
 
-         $(".cor_password").on("keyup", function() { // Выполняем скрипт при изменении содержимого 2-го поля
 
-   var value_input1 = $(".password").val(); // Получаем содержимое 1-го поля
-         var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
+         $(".cor_password").on("keyup", function () { // Выполняем скрипт при изменении содержимого 2-го поля
 
-         if(value_input1 != value_input2) { // Условие, если поля не совпадают
+            var value_input1 = $(".password").val(); // Получаем содержимое 1-го поля
+            var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
 
-            $(".error").html("Пароли не совпадают!"); // Выводим сообщение
-         $("#submit").attr("disabled", "disabled"); // Запрещаем отправку формы
-      
-   } else { // Условие, если поля совпадают
+            if (value_input1 != value_input2) { // Условие, если поля не совпадают
 
-            $("#submit").removeAttr("disabled");  // Разрешаем отправку формы
-         $(".error").html(""); // Скрываем сообщение
-      
-   }
-   
-});
+               $(".cor_password").css("")// Выводим сообщение
 
+
+            } else { // Условие, если поля совпадают
+
+               $("#submit").removeAttr("disabled");  // Разрешаем отправку формы
+               $(".error").html(""); // Скрываем сообщение
+
+            }
+
+         });
+      })
    </script>
-   </script>
-
-
 </body>
 
 </html>

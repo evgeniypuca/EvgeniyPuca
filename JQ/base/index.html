@@ -77,7 +77,7 @@
             <th>Данные 01</th>
             <th>Данные 02</th>
          </tr>
-         <tr>
+         <tr class="1">
             <th>Иванов Иван Иванович</th>
             <td>М</td>
             <td>начальник</td>
@@ -85,7 +85,7 @@
             <td>4567</td>
             <td>3453</td>
          </tr>
-         <tr>
+         <tr class="2">
             <th>Петрова Илона Петровна</th>
             <td>Ж</td>
             <td>секретарь</td>
@@ -93,7 +93,7 @@
             <td>98795</td>
             <td>46522</td>
          </tr>
-         <tr>
+         <tr class="4">
             <th>Сидоров Ильи Игоревич</th>
             <td>М</td>
             <td>бухгалтер</td>
@@ -101,7 +101,7 @@
             <td>743434</td>
             <td>97989875</td>
          </tr>
-         <tr>
+         <tr class="5">
             <th>Пупин федор Федорович</th>
             <td>М</td>
             <td>водитель</td>
@@ -109,7 +109,7 @@
             <td>458848484</td>
             <td>28988555555</td>
          </tr>
-         <tr>
+         <tr class="6">
             <th>Крупин Сергей Иванович</th>
             <td>М</td>
             <td>водитель 2</td>
@@ -134,14 +134,38 @@
    $(document).ready(function ($) {
       var counter = 0;
 
-      $("tr").on('click', function () {
-         $("tr").hide(300)
+      $(".1").on('click', function () {
+         $(".1").hide(300)
+      })
+      $(".2").on('click', function () {
+         $(".2").hide(300)
+      })
+      $(".3").on('click', function () {
+         $(".3").hide(300)
+      })
+      $(".4").on('click', function () {
+         $(".4").hide(300)
+      })
+      $(".5").on('click', function () {
+         $(".5").hide(300)
+      })
+      $(".6").on('click', function () {
+         $(".6").hide(300)
       })
       $('#btn').on('click', function () {
          $('tr').show(300)
       })
+
+      $('tr').click(function () {
+         $('#btn').css(
+            {
+               .text(dfdg)
+            }
+         );
+      })
    });
 
 </script>
+<!-- // text(className); -->
 
 </html>
